@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="list-boxes">
+    <ng-container *ngFor="let box of boxs; let i = index">
+    <div class="box" (click)="onClickBox(i)">
+      <ng-container *ngIf="box.clicked === classClick.clicked">
+        <div class="circle-full">
+          
+        </div>
+      </ng-container>
+      <ng-container *ngIf="box.clicked === classClick.lastClicked">
+        <div class="circle-out">
+          
+        </div>
+      </ng-container>
+      </div>
+    </ng-container>
+  </div>
+</div>
